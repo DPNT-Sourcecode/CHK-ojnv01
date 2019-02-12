@@ -27,38 +27,3 @@ def get(items):
 
     A = 0
     B = 0
-    C = 0
-    D = 0
-
-    for item in item_list:
-        if item == 'A':
-            A = A + 1
-        elif item == 'B':
-            B = B + 1
-        elif item == 'C':
-            C = C + 1
-        else:
-            D = D + 1
-
-    # for A there is a special offer 3 for 130
-
-    # find out how many of the offers there are, and then how many extra
-
-    offers = A / 3
-    left = A % 3
-
-    total = (offers * 130) + (left * 50)
-
-    # for B there is also an offer, 2 for 45
-
-    offers = B / 2
-    left = B % 2
-
-    total = total + (offers * 45) + (left * 30)
-
-    total = total + (C * 20)
-    total = total + (D * 15)
-
-    return total
-
-
