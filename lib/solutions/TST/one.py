@@ -11,7 +11,7 @@ def checkout(items):
     i'm going to allow upper or lower case to be entered, and convert to upper case for checking
 
     """
-    if type(items) != str:
+    if type(items) != str or items is None or len(items) == 0:
         return -1
 
     valid_letters = ['A', 'B', 'C', 'D']
