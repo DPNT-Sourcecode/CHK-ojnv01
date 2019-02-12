@@ -20,3 +20,26 @@ def get(items):
         item_list.append(i.upper())
 
 
+    # now lets check that all the letters are valid. not all of the valid letters have to be in the string
+
+    if len(set(items) - set(valid_letters)) > 0:
+        return -1
+
+    A = 0
+    B = 0
+    C = 0
+    D = 0
+
+    for item in item_list:
+        if item == 'A':
+            A = A + 1
+        elif item == 'B':
+            B = B + 1
+        elif item == 'C'
+            C = C + 1
+        else:
+            D = D + 1
+
+    
+
+
