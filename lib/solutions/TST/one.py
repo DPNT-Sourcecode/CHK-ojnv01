@@ -13,5 +13,10 @@ def get(items):
 
     valid_letters = ['A', 'B', 'C', 'D']
 
+    # we need to convert the string to a list
+
+    item_list = []
+    for i in items:
+        item_list.append(i.upper())
 
 
