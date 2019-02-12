@@ -11,7 +11,7 @@ def checkout(items):
     i'm going to allow upper or lower case to be entered, and convert to upper case for checking
 
     """
-    if type(items) != str or items is None or len(items) == 0:
+    if type(items) != str or items is None or len(items) == 0 or items == "":
         return -1
 
     valid_letters = ['A', 'B', 'C', 'D']
@@ -62,3 +62,4 @@ def checkout(items):
     total = total + (D * 15)
 
     return total
+
